@@ -73,3 +73,16 @@ usuario = {
     age: 10,
 };
 console.log(usuario);
+// union types
+var nota = true;
+console.log(nota);
+nota = false;
+console.log(nota);
+var asac = function (numero) { return numero; };
+console.log(asac(20));
+var conta = {
+    nome: 'vitor',
+    lastname: 'silva',
+    idade: null
+};
+console.log(conta);

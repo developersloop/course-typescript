@@ -98,3 +98,36 @@ usuario = {
 }
 
 console.log(usuario)
+
+// union types
+let nota: string | number | boolean = true 
+console.log(nota)
+nota  = false
+console.log(nota)
+
+let asac: (numero:number) => number = (numero: number) => numero
+
+console.log(asac(20))
+
+// tipo never, nunca vai ter um retorno
+
+// const error: (msg: string) => never = (msg: string) => { throw new Error(msg) }
+
+// error('never')
+
+
+// tipo null
+
+type Contato1  = {
+    nome: string,
+    lastname: string,
+    idade: null | number // não requirido(não obrigatório opcional)
+}
+
+const conta: Contato1 = {
+    nome: 'vitor',
+    lastname: 'silva',
+    idade: null
+}
+
+console.log(conta)
