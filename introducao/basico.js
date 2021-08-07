@@ -1,3 +1,4 @@
 "use strict";
-var a = 'Vitror Silva';
+const a = 'Vitror Silva';
 console.log(a);
+//# sourceMappingURL=basico.js.map

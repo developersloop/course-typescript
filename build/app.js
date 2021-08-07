@@ -1,4 +1,58 @@
 "use strict";
+const canal = 'Gaveta';
+const inscritos = 1001;
+// debugger
+console.log(canal, inscritos);
+function saudar(IsManha) {
+    let saudar;
+    if (IsManha) {
+        saudar = 'Bom dia';
+    }
+    else {
+        saudar = 'boa noite';
+    }
+    return saudar;
+}
+// alert('ad')
+let aa;
+aa = 1;
+aa = true;
+alert(aa);
+// alias 
+let funcionario;
+const date = new Date();
+var nomesSupervisores;
+(function (nomesSupervisores) {
+    nomesSupervisores["nome"] = "Vitor Silva";
+    nomesSupervisores["nome1"] = "Maria Vit\u00F3ria";
+})(nomesSupervisores || (nomesSupervisores = {}));
+const batePonto = (numero) => {
+    if (numero <= 8)
+        return "Ponto normal";
+    else
+        return "Fora do horário";
+};
+funcionario = {
+    nomes: [nomesSupervisores.nome, nomesSupervisores.nome1],
+    baterPonto: (numero) => batePonto(numero),
+};
+console.log(funcionario.baterPonto(date.getHours()));
+console.log(funcionario.nomes);
+let contaBancaria = {
+    saldo: 3456,
+    depositar(valor) {
+        this.saldo += valor;
+    }
+};
+let currentista = {
+    nome: 'Ana Silva',
+    contaBancaria,
+    contatos: ['34567890', '98765432']
+};
+currentista.contaBancaria.depositar(3000);
+console.log(currentista);
+const a = 'Vitror Silva';
+console.log(a);
 let nome = 'João';
 // nome = 1
 let tody;
@@ -29,6 +83,7 @@ console.log(tup);
 console.log(tuplas);
 // enums
 var PalleteColors;
+// enums
 (function (PalleteColors) {
     PalleteColors["red"] = "red";
     PalleteColors["orange"] = "orange";
@@ -86,4 +141,4 @@ const conta = {
     idade: null
 };
 console.log(conta);
-//# sourceMappingURL=tipos.js.map
+//# sourceMappingURL=app.js.map

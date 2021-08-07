@@ -21,7 +21,7 @@ const batePonto: (numero: number) => any = (numero) => {
 
 funcionario = {
     nomes: [nomesSupervisores.nome, nomesSupervisores.nome1],
-    baterPonto: (numero) => batePonto(12),
+    baterPonto: (numero) => batePonto(numero),
 }
 
 console.log(funcionario.baterPonto(date.getHours()))

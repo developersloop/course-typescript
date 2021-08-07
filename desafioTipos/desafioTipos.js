@@ -1,13 +1,13 @@
 "use strict";
 // alias 
-var funcionario;
-var date = new Date();
+let funcionario;
+const date = new Date();
 var nomesSupervisores;
 (function (nomesSupervisores) {
     nomesSupervisores["nome"] = "Vitor Silva";
     nomesSupervisores["nome1"] = "Maria Vit\u00F3ria";
 })(nomesSupervisores || (nomesSupervisores = {}));
-var batePonto = function (numero) {
+const batePonto = (numero) => {
     if (numero <= 8)
         return "Ponto normal";
     else
@@ -15,7 +15,8 @@ var batePonto = function (numero) {
 };
 funcionario = {
     nomes: [nomesSupervisores.nome, nomesSupervisores.nome1],
-    baterPonto: function (numero) { return batePonto(12); },
+    baterPonto: (numero) => batePonto(numero),
 };
 console.log(funcionario.baterPonto(date.getHours()));
 console.log(funcionario.nomes);
+//# sourceMappingURL=desafioTipos.js.map
